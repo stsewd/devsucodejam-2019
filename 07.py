@@ -41,3 +41,10 @@ def mob(n):
         guys[-1] = guy_fr
 
     return ''.join(guys)
+
+
+def test():
+    assert mob(4) == '(-_(-_(-_-)_-)'
+    assert mob(11) == '(-(-_(-_-(-_(-_(-_-)_-)_-)-_-)_-)-)'
+    assert mob(1) == '(-_-)'
+    assert mob(14) == '(-(-_-(-_(-_(-_-(-_(-_(-_-)_-)_-)-_-)_-)_-)-)'

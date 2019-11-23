@@ -65,3 +65,12 @@ def rochambeau(player1, player2):
             return result_won_1.format('1')
     else:
         return result_tied
+
+
+def test():
+    result = rochambeau(
+        ["rock", "lizard", "scissors", "scissors"],
+        ["paper", "rock", "spock", "paper"],
+    )
+    assert result == 'player 2 won by 3 points'
+

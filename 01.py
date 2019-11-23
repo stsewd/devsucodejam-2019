@@ -12,3 +12,8 @@ def encrypt(key, message):
             solution += key
         solution += m
     return solution
+
+
+def test():
+    result = encrypt('dcj', 'I love prOgrAmming!')
+    assert result == 'dcjI ldcjovdcje prdcjOgrdcjAmmdcjing!'

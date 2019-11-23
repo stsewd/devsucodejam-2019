@@ -20,3 +20,7 @@ def solve(values):
             return new_values
         values = new_values
     return values
+
+
+def test():
+    assert solve([3, 4, -7, 5, -6, 2, 5, -1, 8]) == [5, 8]

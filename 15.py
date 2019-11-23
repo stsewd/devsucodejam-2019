@@ -19,3 +19,7 @@ def solve(n):
         numbers = max_ - min_
         if numbers == magic:
             return steps
+
+
+def test():
+    assert solve(3421) == 3

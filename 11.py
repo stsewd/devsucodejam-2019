@@ -8,3 +8,9 @@ def pascalTriangle(x, y):
     row = 11 ** x
     col = str(row)[-(y + 1)]
     return int(col)
+
+
+def test():
+    assert pascalTriangle(2, 1) == 2
+    # TODO
+    # assert pascalTriangle(6, 4) == 15

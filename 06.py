@@ -25,3 +25,11 @@ def angles(times):
         else:
             total += (12 - (h - m)) * 30
     return total
+
+
+import pytest
+
+
+def test():
+    result = angles(["12:00", "17:30", "blabla", "20:21", "26:88"])
+    assert result == pytest.approx(50.5)

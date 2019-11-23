@@ -16,3 +16,8 @@ def product(values):
                 max_ = sub_sum
                 max_index = (i, j)
     return values[max_index[0]:max_index[1] + 1]
+
+
+def test():
+    result = product([-3.2, 4.2, 7, 5.4, -2.2, -2.5])
+    assert result == [-3.2, 4.2, 7, 5.4, -2.2]

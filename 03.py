@@ -12,3 +12,8 @@ def nthCase(n, message):
         else:
             result[i] = w.lower()
     return ''.join(result)
+
+
+def test():
+    result = nthCase(3, 'Greetings, this is AN EXAMPLE!')
+    assert result == 'GrEetIngS, ThiS iS An ExAMpLE!'
