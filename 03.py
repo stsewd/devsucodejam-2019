@@ -9,10 +9,7 @@ def nthCase(n, message):
     result = list(message)
     for i in range(n - 1, len(message), n):
         w = result[i]
-        if w.islower():
-            result[i] = w.upper()
-        else:
-            result[i] = w.lower()
+        result[i] = w.upper() if w.islower() else w.lower()
     return "".join(result)
 
 
