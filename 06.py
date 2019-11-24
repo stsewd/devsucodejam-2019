@@ -2,9 +2,10 @@
 
 import re
 
+
 def angles(times):
     total = 0
-    pattern = re.compile(r'([0-2][0-9]):([0-5][0-9])')
+    pattern = re.compile(r"([0-2][0-9]):([0-5][0-9])")
     for time in times:
         match = pattern.match(time)
         if not match:
@@ -18,7 +19,7 @@ def angles(times):
             total -= 100
             continue
 
-        h = (h % 12) + (m * (1/60))
+        h = (h % 12) + (m * (1 / 60))
         m = m / 5
         if h <= m:
             total += (m - h) * 30

@@ -1,19 +1,20 @@
 # Eerie Mob
 
+
 def mob(n):
-    default = '(O_o)'
+    default = "(O_o)"
     if not n or not (1 <= n <= 255):
         return default
 
-    guy = '(-_-)'
-    guy_sl = '(-_'
-    guy_sr = '_-)'
-    guy_pl = '(-_-'
-    guy_pr = '-_-)'
-    guy_fl = '(-'
-    guy_fr = '-)'
+    guy = "(-_-)"
+    guy_sl = "(-_"
+    guy_sr = "_-)"
+    guy_pl = "(-_-"
+    guy_pr = "-_-)"
+    guy_fl = "(-"
+    guy_fr = "-)"
 
-    guys = [''] * n
+    guys = [""] * n
 
     # Guy in the middle
     middle = n // 2
@@ -40,11 +41,11 @@ def mob(n):
         guys[0] = guy_fl
         guys[-1] = guy_fr
 
-    return ''.join(guys)
+    return "".join(guys)
 
 
 def test():
-    assert mob(4) == '(-_(-_(-_-)_-)'
-    assert mob(11) == '(-(-_(-_-(-_(-_(-_-)_-)_-)-_-)_-)-)'
-    assert mob(1) == '(-_-)'
-    assert mob(14) == '(-(-_-(-_(-_(-_-(-_(-_(-_-)_-)_-)-_-)_-)_-)-)'
+    assert mob(4) == "(-_(-_(-_-)_-)"
+    assert mob(11) == "(-(-_(-_-(-_(-_(-_-)_-)_-)-_-)_-)-)"
+    assert mob(1) == "(-_-)"
+    assert mob(14) == "(-(-_-(-_(-_(-_-(-_(-_(-_-)_-)_-)-_-)_-)_-)-)"

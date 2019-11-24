@@ -1,5 +1,6 @@
 # Series reloaded
 
+
 def series(n):
     if n <= 0:
         return -1

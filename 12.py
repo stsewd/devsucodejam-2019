@@ -1,5 +1,6 @@
 # Distinct characters
 
+
 def solve(message):
     if not message:
         return 0
@@ -21,6 +22,6 @@ def solve(message):
 
 
 def test():
-    assert solve('gamer programming') == 13
-    assert solve('uniqe') == 5
-    assert solve('unique') == 6
+    assert solve("gamer programming") == 13
+    assert solve("uniqe") == 5
+    assert solve("unique") == 6

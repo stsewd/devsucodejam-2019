@@ -1,6 +1,5 @@
 # Product subarray
 
-import itertools
 
 def product(values):
     if not values:
@@ -15,7 +14,7 @@ def product(values):
             if sub_sum > max_:
                 max_ = sub_sum
                 max_index = (i, j)
-    return values[max_index[0]:max_index[1] + 1]
+    return values[max_index[0] : max_index[1] + 1]
 
 
 def test():

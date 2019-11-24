@@ -1,5 +1,6 @@
 # Pascal Triangle
 
+
 def pascalTriangle(x, y):
     if y > x:
         return -1
@@ -14,10 +15,7 @@ def pascalTriangle(x, y):
     row = [1]
     for i in range(x):
         extra = [] if i % 2 == 0 else [row[-1]]
-        row = [
-            a + b
-            for a, b in zip(row + extra, [0] + row)
-        ]
+        row = [a + b for a, b in zip(row + extra, [0] + row)]
     return row[y]
 
 

@@ -2,14 +2,16 @@
 
 import itertools
 
+
 def short(values):
     for i in range(len(values)):
         sub_sum = 0
         for j in range(i, len(values)):
             sub_sum += values[j]
             if sub_sum == 0:
-                return values[:i] + values[j + 1:]
+                return values[:i] + values[j + 1 :]
     return values
+
 
 def solve(values):
     if not values:

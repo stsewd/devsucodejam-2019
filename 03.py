@@ -1,7 +1,9 @@
 # Nth case
+
+
 def nthCase(n, message):
     if not message:
-        return ''
+        return ""
     if n <= 0:
         return message
     result = list(message)
@@ -11,9 +13,9 @@ def nthCase(n, message):
             result[i] = w.upper()
         else:
             result[i] = w.lower()
-    return ''.join(result)
+    return "".join(result)
 
 
 def test():
-    result = nthCase(3, 'Greetings, this is AN EXAMPLE!')
-    assert result == 'GrEetIngS, ThiS iS An ExAMpLE!'
+    result = nthCase(3, "Greetings, this is AN EXAMPLE!")
+    assert result == "GrEetIngS, ThiS iS An ExAMpLE!"

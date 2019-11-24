@@ -1,10 +1,10 @@
 # Rock Paper Scissors Lizard Spock
 
-paper = 'paper'
-rock = 'rock'
-scissors = 'scissors'
-lizard = 'lizard'
-spock = 'spock'
+paper = "paper"
+rock = "rock"
+scissors = "scissors"
+lizard = "lizard"
+spock = "spock"
 
 allowed = {paper, rock, scissors, lizard, spock}
 
@@ -16,9 +16,10 @@ rules = {
     spock: {scissors, rock},
 }
 
-result_tied = 'players tied'
-result_won_1 = 'player {} won by 1 point'
-result_won_x = 'player {} won by {} points'
+result_tied = "players tied"
+result_won_1 = "player {} won by 1 point"
+result_won_x = "player {} won by {} points"
+
 
 def rochambeau(player1, player2):
     if not player1 or not player2:
@@ -55,22 +56,20 @@ def rochambeau(player1, player2):
 
     if points2 > points1:
         if points2 > 1:
-            return result_won_x.format('2', points2)
+            return result_won_x.format("2", points2)
         else:
-            return result_won_1.format('2')
+            return result_won_1.format("2")
     elif points1 > points2:
         if points1 > 1:
-            return result_won_x.format('1', points1)
+            return result_won_x.format("1", points1)
         else:
-            return result_won_1.format('1')
+            return result_won_1.format("1")
     else:
         return result_tied
 
 
 def test():
     result = rochambeau(
-        ["rock", "lizard", "scissors", "scissors"],
-        ["paper", "rock", "spock", "paper"],
+        ["rock", "lizard", "scissors", "scissors"], ["paper", "rock", "spock", "paper"],
     )
-    assert result == 'player 2 won by 3 points'
-
+    assert result == "player 2 won by 3 points"

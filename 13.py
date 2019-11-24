@@ -1,5 +1,6 @@
 # Toeplitz matrix
 
+
 def solve(matrix):
     unique = set()
     len_x = len(matrix)
