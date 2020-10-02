@@ -1,5 +1,7 @@
 # Arrange the pieces
 
+from functools import lru_cache
+
 # After putting a piece,
 # a state can be:
 # |0|0|x|
@@ -21,6 +23,7 @@ rules = {
 }
 
 
+@lru_cache
 def get_count(current_state, current_count):
     if current_count == 0 and current_state == empty:
         return 1
